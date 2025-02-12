@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanthira|Official Solid Fragrance store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+        <div class = "bg">
+
+    </div>
+
+    <section class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/main-logo.png" width="150px">
+            </div>
+                <nav>
+                    <ul id="MenuItems" style="max-height: 0;">
+                        <li><a href="#Home" id="homeLink">Home</a></li>
+                        <li><a href="#Products" id="productsLink">Products</a></li>
+                        <li><a href="#About" id="aboutLink">About</a></li>
+                        <li><a href="#contact" id="contactLink">Contact</a></li>
+                    </ul>
+                </nav>
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()" >
+        </div>
+    
+
+    <img class="Darken" src="Images/Darken.png" alt="">
+    <center>
+        <div class="container" id="Home">
+        
+            <div class="row">
+                <div class="col-2">
+                    <center>
+                        <h1>POCKETABLE <br> SOLID PERFUME</h1>
+                        <a href="#solid-perfume" class="btn">Explore Now!</a>
+                    </center>
+                </div>
+                <div class="col-2">
+                    <img  src="Images/mainpage-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </center>   
+</section>
+
+<!--Solid Perfume-->
+<div id="solid-perfume">
+    <div class="solid-perfume">
+        <div class="small-container2">
+            <div class="row">
+                <div class="col-4">
+                    <h1>What is <br>Solid Perfume?</h1>
+                </div>
+                <div class="col-4">
+                    <p>Solid perfume is a portable, wax-based fragrance that melts gently with your skin's warmth. Made with natural ingredients and minimal alcohol, it offers a subtle, long-lasting scent perfect for on-the-go application. Compact and travel-friendly, it’s your dream fragrance in a pocket-sized form.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!---- our product ----> 
+<div class="small-container" id="Products">
+    <h1 class="title">OUR PRODUCTS</h1>
+    <div class="row">
+        <div class="col-3">
+            <img src="Images/skycrest-removebg-preview.png" alt="">
+            <h4>Skycrest</h4>
+            <p>spicy woody
+                <br>
+                Rp. 45.000
+            </p>
+        </div>
+        <div class="col-3">
+            <img src="Images/luminance-removebg-preview.png" alt="">
+            <h4>Luminance</h4>
+            <p>citrus fresh
+                <br>
+                Rp. 45.000
+            </p>
+        </div><div class="col-3">
+            <img src="Images//vinelet-removebg-preview.png" alt="">
+            <h4>Vinelet</h4>
+            <p>floral powdery
+                <br>
+                Rp. 45.000
+            </p>
+        </div><div class="col-3">
+            <img src="Images/peta-removebg-preview.png" alt="">
+            <h4>Petafruit</h4>
+            <p>fruity floral
+                <br>
+                Rp. 45.000
+            </p>
+        </div><div class="col-3">
+            <img src="Images/soulflow-removebg-preview.png" alt="">
+            <h4>Soulflow</h4>
+            <p>sweet
+                <br>
+                Rp. 45.000
+            </p>
+    </div>
+    <div class="small-container5">
+                <h1 class="Ingredients">Ingredients</h1>
+                <p>Shea butter, Almond oil, Beeswax, ~10% alcohol, </p>
+        </div>
+</div>
+</div>
+
+<!--about us-->
+<div class="about" id="About">
+    <h1 class="title2">About</h1>
+    <div class="row">
+        <div class="col-5">
+            <p>At Chanthira, we believe that fragrance is more than just a scent—it’s an expression of your personality, your dreams, and your journey. Our brand is dedicated to creating solid perfumes that are as unique and special as you are. <br> <br>
+
+                Crafted with care, our perfumes are made from natural ingredients like shea butter, almond oil, and beeswax, ensuring a gentle yet long-lasting fragrance experience. With minimal alcohol content, our products are kind to your skin while delivering a captivating aroma that lasts for hours. <br> <br>
+                
+                Portable, eco-friendly, and travel-ready, Chanthira solid perfumes are perfect for the modern individual who values simplicity, sustainability, and elegance. Whether you’re looking for a signature scent or a versatile fragrance for every occasion, Chanthira is here to help you capture the scent of your dreams. <br> <br>
+                
+                Welcome to Chanthira—where nature meets craftsmanship, and every fragrance tells a story.</p>
+        </div>
+        <div class="col-5" id="gambar about">
+        <img src="Images/Logo about.jpg" alt="" id="logoabout">   
+        </div>
+    </div>
+</div>
+
+<!--contact-->
+<div class="contact" id="contact">
+    <h1 class="title3">Contact</h1>
+    <div class="row">
+        <div class="col-6">
+        <a href="https://www.instagram.com/chanthira.scents/" target="_blank">
+            <img src="Images/Instagram.png" alt="">
+        </a>
+        <p>@chanthira.scents</p>   
+        </div>
+        <div class="col-6" >
+            <a href="https://wa.me/6281250003057" target="_blank">
+                <img src="Images/whatsapp.png" alt="" >
+            </a>    
+            <p>0812-5000-3057</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!----js for toggle menu-->
+<script>
+    var MenuItem = document.getElementById("MenuItems");
+
+    function menutoggle(){
+        if (MenuItem.style.maxHeight == "0px")
+        {
+            MenuItem.style.maxHeight = "200px";
+        }
+        else {
+            MenuItem.style.maxHeight = "0px";
+        }
+    }
+
+    function menuCloser(linkID) {
+        document.getElementById(linkID).addEventListener('click', () => {
+        document.getElementById("MenuItems").style.maxHeight = "0";
+    })
+    }
+
+    menuCloser("homeLink");
+    menuCloser("productsLink");
+    menuCloser("aboutLink");
+    menuCloser("contactLink");
+
+</script>
+<!--js scroll-->
+<style type="text/css">
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
+</body>
+</html>
